@@ -8,8 +8,8 @@ ENV PATH="/root/.local/bin/:$PATH"
 
 # Install additional packages using uv
 RUN uv pip install --system torch --index-url https://download.pytorch.org/whl/cpu \
-    && uv pip install --system numpy pandas matplotlib jax seaborn
+    && uv pip install --system ruff pylint numpy pandas matplotlib jax seaborn
 
-# Only relevant if running container outside of devcontainer
+# Only relevant if running container outside of devcontainer (not recommended)
 WORKDIR /home/vscode
 CMD ["/bin/zsh"]

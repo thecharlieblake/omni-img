@@ -1,0 +1,31 @@
+{
+  "name": "Omni Container",
+  "build": {
+      "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-python.python",
+        "charliermarsh.ruff",
+        "ms-python.pylint",
+        "ms-toolsai.jupyter",
+        "github.github-vscode-theme",
+        "vscodevim.vim",
+        "ms-azuretools.vscode-docker"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "python.linting.enabled": true,
+        "python.linting.ruffEnabled": true,
+        "python.linting.pylintEnabled": true,
+        "python.languageServer": "Pylance",
+        "workbench.colorTheme": "GitHub Light",
+        "editor.fontSize": 13,
+        "terminal.integrated.fontSize": 13,
+        "files.autoSave": "afterDelay"
+      }
+    }
+  },
+  "remoteUser": "vscode"
+}
